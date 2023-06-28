@@ -39,8 +39,8 @@
         </fileSet>
 
         <fileSet>
-            <directory>../maven-autotag-plugin</directory>
-            <outputDirectory>src/maven-autotag-plugin</outputDirectory>
+            <directory>../tiles-maven-autotag-plugin</directory>
+            <outputDirectory>src/tiles-maven-autotag-plugin</outputDirectory>
             <includes>
                 <include>pom.xml</include>
                 <include>src/</include>

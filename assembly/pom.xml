@@ -20,7 +20,6 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.apache.tiles</groupId>
   <artifactId>tiles-autotag-assembly</artifactId>
   <packaging>pom</packaging>
   <name>Tiles Autotag Assembly</name>
@@ -30,7 +29,7 @@
   <parent>
     <groupId>org.apache.tiles</groupId>
     <artifactId>tiles-autotag</artifactId>
-    <version>1.2</version>
+    <version>1.2-nubitic-jakarta-api</version>
   </parent>
 
   <build>
@@ -121,26 +120,6 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>wagon-maven-plugin</artifactId>
-            <version>1.0-beta-4</version>
-            <executions>
-              <execution>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>upload</goal>
-                </goals>
-                <configuration>
-                  <fromDir>${project.build.directory}/assemblies</fromDir>
-                  <includes>**</includes>
-                  <toDir>${project.version}</toDir>
-                  <serverId>tiles.build</serverId>
-                  <url>scp://people.apache.org/www/people.apache.org/builds/tiles/autotag</url>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
         </plugins>
       </build>
     </profile>
@@ -180,7 +159,7 @@
 
     <dependency>
       <groupId>org.apache.tiles.autotag.plugin</groupId>
-      <artifactId>maven-autotag-plugin</artifactId>
+      <artifactId>tiles-maven-autotag-plugin</artifactId>
       <version>${project.version}</version>
     </dependency>
 

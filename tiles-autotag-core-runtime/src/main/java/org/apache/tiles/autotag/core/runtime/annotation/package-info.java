@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: package-info.java 1044817 2010-12-12 13:22:01Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file

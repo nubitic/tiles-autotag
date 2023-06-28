@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: Parameter.java 1044817 2010-12-12 13:22:01Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -28,7 +28,7 @@ import java.lang.annotation.Target;
 /**
  * Specifies behaviour for a parameter of the "execute" method of a template class.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1044817 $ $Date: 2010-12-13 00:22:01 +1100 (Mon, 13 Dec 2010) $
  */
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.PARAMETER)

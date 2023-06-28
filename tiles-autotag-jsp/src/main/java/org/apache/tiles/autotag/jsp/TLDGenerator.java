@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: TLDGenerator.java 1643653 2014-12-07 06:47:59Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -29,7 +29,7 @@ import org.apache.velocity.app.VelocityEngine;
 /**
  * Generates the TLD file, using a template suite.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1643653 $ $Date: 2014-12-07 17:47:59 +1100 (Sun, 07 Dec 2014) $
  */
 public class TLDGenerator extends AbstractTemplateSuiteGenerator {
 

@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: AbstractModelBody.java 1692328 2015-07-22 21:16:35Z mck $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -30,7 +30,7 @@ import org.apache.tiles.autotag.core.runtime.util.NullWriter;
 /**
  * Base class for the abstraction of the body.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1692328 $ $Date: 2015-07-23 07:16:35 +1000 (Thu, 23 Jul 2015) $
  */
 public abstract class AbstractModelBody implements ModelBody {
 

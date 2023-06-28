@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: AutotagRuntime.java 1349964 2012-06-13 17:18:51Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file

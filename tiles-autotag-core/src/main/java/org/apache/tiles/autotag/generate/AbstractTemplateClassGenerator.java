@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: AbstractTemplateClassGenerator.java 1656976 2015-02-04 02:27:40Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -40,7 +40,7 @@ import org.apache.velocity.exception.ResourceNotFoundException;
 /**
  * A base template class generator.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1656976 $ $Date: 2015-02-04 13:27:40 +1100 (Wed, 04 Feb 2015) $
  */
 public abstract class AbstractTemplateClassGenerator implements
         TemplateClassGenerator {

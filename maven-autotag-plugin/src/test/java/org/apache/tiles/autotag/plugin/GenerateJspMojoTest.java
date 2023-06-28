@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: GenerateJspMojoTest.java 1044657 2010-12-11 13:53:42Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -28,7 +28,7 @@ import org.junit.Test;
 /**
  * Tests {@link GenerateJspMojo}.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1044657 $ $Date: 2010-12-12 00:53:42 +1100 (Sun, 12 Dec 2010) $
  */
 public class GenerateJspMojoTest {
 

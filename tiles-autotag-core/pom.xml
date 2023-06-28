@@ -24,11 +24,9 @@ under the License.
 	<parent>
 		<artifactId>tiles-autotag</artifactId>
 		<groupId>org.apache.tiles</groupId>
-		<version>1.2</version>
+		<version>1.2-nubitic-jakarta-api</version>
 	</parent>
-	<groupId>org.apache.tiles</groupId>
 	<artifactId>tiles-autotag-core</artifactId>
-	<version>1.2</version>
 	<name>Autotag - Core</name>
 	<description>Core classes for Autotag.</description>
 	<build>
@@ -66,8 +64,8 @@ under the License.
 			<artifactId>tiles-autotag-core-runtime</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity</artifactId>
+		    <groupId>org.apache.velocity</groupId>
+		    <artifactId>velocity-engine-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>

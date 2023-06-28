@@ -75,7 +75,7 @@ public class MyTagModel {
 -----------------
 <plugin>
   <groupId>org.apache.tiles.autotag.plugin</groupId>
-  <artifactId>maven-autotag-plugin</artifactId>
+  <artifactId>tiles-maven-autotag-plugin</artifactId>
   <version>1.0</version>
   <executions>
     <execution>

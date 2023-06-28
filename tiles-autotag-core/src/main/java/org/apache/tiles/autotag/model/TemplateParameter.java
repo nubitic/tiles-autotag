@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: TemplateParameter.java 1349964 2012-06-13 17:18:51Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -25,7 +25,7 @@ import org.apache.tiles.autotag.core.runtime.ModelBody;
 /**
  * It represents a parameter in a method in a parsed template class.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1349964 $ $Date: 2012-06-14 03:18:51 +1000 (Thu, 14 Jun 2012) $
  */
 public class TemplateParameter {
 
@@ -158,7 +158,7 @@ public class TemplateParameter {
     }
 
     /**
-     * Indicates that this parameter implements {@link Request}.
+     * Indicates that this parameter implements <code>org.apache.tiles.request.Request</code>.
      *
      * @return <code>true</code> if the parameter is a request.
      */

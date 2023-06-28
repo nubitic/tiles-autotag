@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: CreateDescriptorMojo.java 1656976 2015-02-04 02:27:40Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file

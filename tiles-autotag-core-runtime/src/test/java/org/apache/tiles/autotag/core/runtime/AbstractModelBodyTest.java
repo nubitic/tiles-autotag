@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: AbstractModelBodyTest.java 1044817 2010-12-12 13:22:01Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -33,7 +33,7 @@ import org.junit.Test;
 /**
  * Tests {@link AbstractModelBody}.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1044817 $ $Date: 2010-12-13 00:22:01 +1100 (Mon, 13 Dec 2010) $
  */
 public class AbstractModelBodyTest {
 
@@ -125,7 +125,7 @@ public class AbstractModelBodyTest {
     /**
      * A mock model body.
      *
-     * @version $Rev$ $Date$
+     * @version $Rev: 1044817 $ $Date: 2010-12-13 00:22:01 +1100 (Mon, 13 Dec 2010) $
      */
     public static class MockModelBody extends AbstractModelBody {
 

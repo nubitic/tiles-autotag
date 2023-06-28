@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: FMTemplateGeneratorFactory.java 1643653 2014-12-07 06:47:59Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -29,7 +29,7 @@ import org.apache.velocity.app.VelocityEngine;
 /**
  * Creates a template generator that generates code for Freemarker.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1643653 $ $Date: 2014-12-07 17:47:59 +1100 (Sun, 07 Dec 2014) $
  */
 public class FMTemplateGeneratorFactory implements TemplateGeneratorFactory {
 
@@ -51,7 +51,7 @@ public class FMTemplateGeneratorFactory implements TemplateGeneratorFactory {
     /**
      * Constructor.
      *
-     * @param classesOutputDirectory Directory where code will be placed.
+     * @param classesOutputLocator Locator for where code will be placed.
      * @param velocityEngine The Velocity engine.
      * @param templateGeneratorBuilder The template generator builder.
      */

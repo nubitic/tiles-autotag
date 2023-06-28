@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: AbstractGenerateMojo.java 1656976 2015-02-04 02:27:40Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -46,11 +46,12 @@ import org.sonatype.plexus.build.incremental.BuildContext;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider;
+import com.thoughtworks.xstream.security.AnyTypePermission;
 
 /**
  * Abstract class to generate boilerplate code starting from template model classes.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1656976 $ $Date: 2015-02-04 13:27:40 +1100 (Wed, 04 Feb 2015) $
  */
 public abstract class AbstractGenerateMojo extends AbstractMojo {
 	/**
@@ -106,6 +107,7 @@ public abstract class AbstractGenerateMojo extends AbstractMojo {
         	InputStream stream = templateSuite.getInputStream();
             try {
 	            XStream xstream = new XStream(new Sun14ReflectionProvider());
+	            xstream.addPermission(AnyTypePermission.ANY);
 	            suite = (TemplateSuite) xstream.fromXML(stream);
             } finally {
 	            stream.close();

@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: NotFeasibleExampleModel.java 1044810 2010-12-12 12:50:53Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -23,7 +23,7 @@ package org.apache.tiles.autotag.plugin.internal;
 /**
  * This won't be registered.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1044810 $ $Date: 2010-12-12 23:50:53 +1100 (Sun, 12 Dec 2010) $
  */
 public class NotFeasibleExampleModel {
 

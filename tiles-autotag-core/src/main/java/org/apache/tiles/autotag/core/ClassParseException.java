@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: ClassParseException.java 1643653 2014-12-07 06:47:59Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -23,7 +23,7 @@ package org.apache.tiles.autotag.core;
 /**
  * Thrown if there is a problem when parsing a class source.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1643653 $ $Date: 2014-12-07 17:47:59 +1100 (Sun, 07 Dec 2014) $
  */
 public class ClassParseException extends AutotagRuntimeException {
 

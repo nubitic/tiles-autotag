@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: AutotagRuntimeExceptionTest.java 1037208 2010-11-20 13:49:55Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -28,7 +28,7 @@ import org.junit.Test;
 /**
  * Tests {@link AutotagRuntimeException}.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1037208 $ $Date: 2010-11-21 00:49:55 +1100 (Sun, 21 Nov 2010) $
  */
 public class AutotagRuntimeExceptionTest {
 

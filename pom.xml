@@ -25,25 +25,26 @@ under the License.
         <artifactId>tiles-master</artifactId>
         <groupId>org.apache.tiles</groupId>
         <version>6</version>
-        <relativePath />
     </parent>
-    <groupId>org.apache.tiles</groupId>
     <artifactId>tiles-autotag</artifactId>
-    <version>1.2</version>
+    <version>1.2-nubitic-jakarta-api</version>
     <packaging>pom</packaging>
     <name>Autotags</name>
     <description>Automatic generation of tags.</description>
     <url>http://tiles.apache.org/tiles-autotag/</url>
-    <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/tiles/autotag/tags/tiles-autotag-1.2</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/tiles/autotag/tags/tiles-autotag-1.2</developerConnection>
-        <url>http://svn.apache.org/viewvc/tiles/autotag/tags/tiles-autotag-1.2</url>
-    </scm>
-    <issueManagement>
-        <system>JIRA</system>
-        <url>https://issues.apache.org/jira/browse/AUTOTAG</url>
-        <!-- dev@tiles.apache.org :: this line satisfies INFRA-3329 -->
-    </issueManagement>
+
+	<repositories>
+		<repository>
+			<id>nexus-repo.nubitic.mx</id>
+			<url>https://nexus-repo.nubitic.mx/repository/releases/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus-repo.nubitic.mx</id>
+			<url>https://nexus-repo.nubitic.mx/repository/releases/</url>
+		</pluginRepository>
+	</pluginRepositories>
 
     <modules>
         <module>tiles-autotag-core-runtime</module>
@@ -54,12 +55,12 @@ under the License.
         <module>maven-autotag-plugin</module>
         <module>assembly</module>
     </modules>
-    <distributionManagement>
-        <site>
-            <id>apache-site</id>
-            <url>scm:svn:https://svn.apache.org/repos/asf/tiles/site/staging/tiles-autotag</url>
-        </site>
-    </distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>nexus-repo.nubitic.mx</id>
+			<url>https://nexus-repo.nubitic.mx/repository/releases/</url>
+		</repository>
+	</distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -89,11 +90,12 @@ under the License.
                 <artifactId>tiles-autotag-core-runtime</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.apache.velocity</groupId>
-                <artifactId>velocity</artifactId>
-                <version>1.6.3</version>
-            </dependency>
+			<dependency>
+			    <groupId>org.apache.velocity</groupId>
+			    <artifactId>velocity-engine-core</artifactId>
+			    <version>2.3</version>
+			</dependency>
+
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
@@ -108,9 +110,35 @@ under the License.
               <artifactId>maven-scm-publish-plugin</artifactId>
               <extensions>true</extensions>
                 <configuration>
-                    <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/tiles/site/staging/tiles-autotag</pubScmUrl>
+                    <pubScmUrl>scm:git:https://github.com/nubitic/tiles-autotag.git</pubScmUrl>
                 </configuration>
             </plugin>
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-compiler-plugin</artifactId>
+	          <configuration>
+	            <source>1.7</source>
+	            <target>1.7</target>
+	          </configuration>
+	        </plugin>
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-enforcer-plugin</artifactId>
+	          <version>1.2</version>
+	          <executions>
+	            <execution>
+	              <id>enforce-java</id>
+	              <goals><goal>enforce</goal></goals>
+	              <configuration>
+	                <rules>
+	                  <requireJavaVersion>
+	                    <version>[1.7.0-45,17.0.8)</version>
+	                  </requireJavaVersion>
+	                </rules>
+	              </configuration>
+	            </execution>
+	          </executions>
+	        </plugin>
         </plugins>
     </build>
     <profiles>
@@ -156,6 +184,19 @@ under the License.
                             </execution>
                         </executions>
                     </plugin>
+		          <plugin>
+		            <groupId>org.apache.maven.plugins</groupId>
+		            <artifactId>maven-javadoc-plugin</artifactId>
+		            <version>3.5.0</version>
+		            <executions>
+		              <execution>
+		                <id>attach-javadocs</id>
+		                <goals>
+		                  <goal>jar</goal>
+		                </goals>
+		              </execution>
+		            </executions>
+		          </plugin>
                 </plugins>
             </build>
         </profile>

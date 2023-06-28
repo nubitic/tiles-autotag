@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: BasicTemplateGenerator.java 1643653 2014-12-07 06:47:59Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -31,7 +31,7 @@ import org.apache.tiles.autotag.model.TemplateSuite;
  * The basic template generator. Use {@link TemplateGeneratorBuilder} to
  * create instances of this class.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1643653 $ $Date: 2014-12-07 17:47:59 +1100 (Sun, 07 Dec 2014) $
  */
 class BasicTemplateGenerator implements TemplateGenerator {
 
@@ -92,7 +92,7 @@ class BasicTemplateGenerator implements TemplateGenerator {
     /**
      * A pair of a template suite generator and a directory.
      *
-     * @version $Rev$ $Date$
+     * @version $Rev: 1643653 $ $Date: 2014-12-07 17:47:59 +1100 (Sun, 07 Dec 2014) $
      */
     static class TSGeneratorDirectoryPair {
         /**
@@ -139,7 +139,7 @@ class BasicTemplateGenerator implements TemplateGenerator {
     /**
      * A pair of a template class generator and a directory.
      *
-     * @version $Rev$ $Date$
+     * @version $Rev: 1643653 $ $Date: 2014-12-07 17:47:59 +1100 (Sun, 07 Dec 2014) $
      */
     static class TCGeneratorDirectoryPair {
         /**

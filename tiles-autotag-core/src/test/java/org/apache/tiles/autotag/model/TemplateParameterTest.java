@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: TemplateParameterTest.java 1349964 2012-06-13 17:18:51Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -28,7 +28,7 @@ import org.junit.Test;
 /**
  * Tests {@link TemplateParameter}.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1349964 $ $Date: 2012-06-14 03:18:51 +1000 (Thu, 14 Jun 2012) $
  */
 public class TemplateParameterTest {
 

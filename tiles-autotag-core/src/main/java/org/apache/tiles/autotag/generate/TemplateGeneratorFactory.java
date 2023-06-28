@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: TemplateGeneratorFactory.java 1044707 2010-12-11 20:35:57Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -23,7 +23,7 @@ package org.apache.tiles.autotag.generate;
 /**
  * Creates a new template generator.
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1044707 $ $Date: 2010-12-12 07:35:57 +1100 (Sun, 12 Dec 2010) $
  */
 public interface TemplateGeneratorFactory {
 

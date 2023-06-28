@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: TemplateClassTest.java 1044814 2010-12-12 13:06:26Z apetrelli $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -33,7 +33,7 @@ import org.junit.Test;
 /**
  * @author antonio
  *
- * @version $Rev$ $Date$
+ * @version $Rev: 1044814 $ $Date: 2010-12-13 00:06:26 +1100 (Mon, 13 Dec 2010) $
  */
 public class TemplateClassTest {
 

@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: GenerateFreemarkerMojo.java 1643653 2014-12-07 06:47:59Z nlebas $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
